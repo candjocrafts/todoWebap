@@ -14,7 +14,7 @@ def add_todo():
     rhfunctions.write_file(todos)
 
 
-st.title("My Todo App")
+st.write("<h1 style='color:red;'>My Todo App</h1>", unsafe_allow_html=True)
 
 st.text_input(label="x", placeholder="Add new todo...", label_visibility="hidden", on_change=add_todo, key='new_todo')
 st.subheader("Current to-dos:")
