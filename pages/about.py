@@ -3,7 +3,8 @@ from PIL import Image
 
 st.write("hello")
 
-img = st.camera_input("Camera")
+camera_image = st.camera_input("Camera")
+img = Image.open((camera_image))
 
 gray_img = img.convert("L")
 
